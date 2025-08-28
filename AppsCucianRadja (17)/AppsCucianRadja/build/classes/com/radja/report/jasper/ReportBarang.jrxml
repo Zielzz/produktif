@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e459fea2-a660-48ea-8113-779dbae25383">
+	<property name="ireport.zoom" value="0.9090909090909095"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from barang]]>
+	</queryString>
+	<field name="id_barang" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_barang" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="satuan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="stok" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="harga_satuan" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="83" splitType="Stretch">
+			<staticText>
+				<reportElement x="245" y="9" width="296" height="30" uuid="3fecf7f2-7f8a-4209-b115-d3d7de073e78"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cucian Radja Car Wash]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="245" y="39" width="296" height="30" uuid="1350176e-a898-409b-8e3f-5ceb25eb8be1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Execellent Auto Washing & Detailing]]></text>
+			</staticText>
+			<image vAlign="Middle" onErrorType="Icon">
+				<reportElement x="157" y="9" width="76" height="60" uuid="7a75858e-e581-42f4-8dec-f1378052a77a"/>
+				<imageExpression><![CDATA["C:\\Users\\ACER\\Documents\\NetBeansProjects\\AppsCucianRadja\\src\\com\\radja\\icon\\Logo.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="1" width="802" height="1" backcolor="#000000" uuid="213a9b0f-00df-4109-950f-ed454f60f0d5"/>
+			</line>
+			<staticText>
+				<reportElement x="245" y="10" width="296" height="20" uuid="40edf230-8275-4de0-a14c-a34b5df1629a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Laporan Data Barang]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="21" splitType="Stretch">
+			<rectangle>
+				<reportElement x="152" y="0" width="55" height="20" backcolor="#313649" uuid="c6368ee7-c0e5-40a2-bd96-67810918ce3c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="307" y="0" width="100" height="20" backcolor="#313649" uuid="69ece8af-f50a-45da-8b4d-8bd52f336a5d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="407" y="0" width="100" height="20" backcolor="#313649" uuid="27380d6f-a5cb-42d1-9cf9-05650b1c80b5"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="508" y="0" width="130" height="20" backcolor="#313649" uuid="4ed5c6cd-2ae0-4ea5-83e9-d60b25477d31"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="207" y="0" width="100" height="20" backcolor="#313649" uuid="4a2b4826-f86b-403f-97a0-37bee71154cd"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="152" y="0" width="55" height="20" forecolor="#FFFFFF" uuid="e11718c6-dd23-4388-9049-083abfd7dcca"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[ID Barang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="207" y="0" width="100" height="20" forecolor="#FFFFFF" uuid="10775ace-5866-4223-aea8-101808802552"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Nama Barang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="307" y="0" width="100" height="20" forecolor="#FFFFFF" uuid="0e49559e-8466-4ac3-81bb-1c90d7f357ca"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Satuan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="407" y="0" width="102" height="20" forecolor="#FFFFFF" uuid="31a2a1ba-b6e6-450f-815e-19d5914837e7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Stok]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="508" y="0" width="130" height="20" forecolor="#FFFFFF" uuid="0ff94fd6-0ab6-4c2d-abbf-3915953096dd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Harga Satuan]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<rectangle>
+				<reportElement x="152" y="0" width="55" height="20" uuid="f062758d-1d88-4fa9-872b-265c9268ebe2"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="207" y="0" width="100" height="20" uuid="5cea4e47-5f23-4398-9fe1-1447310baf3b"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="307" y="0" width="100" height="20" uuid="8f04e160-aaa5-43a8-be71-625eaac6adb7"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="407" y="0" width="100" height="20" uuid="bbfd8e17-cf03-45ed-8a24-55dfae1d9e05"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="507" y="0" width="131" height="20" uuid="62223d06-c772-4591-9abf-f193fc319ccc"/>
+			</rectangle>
+			<textField>
+				<reportElement x="152" y="0" width="55" height="20" uuid="1b5604e9-d56d-4f85-a475-4ea8aad71f81"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{id_barang}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="207" y="0" width="100" height="20" uuid="8bce7953-6461-4220-bf2e-727804aa52da"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nama_barang}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="307" y="0" width="100" height="20" uuid="b1051e89-a2a6-46ad-8cf4-e0332c5594a8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{satuan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="407" y="0" width="101" height="20" uuid="676ef5bd-4905-4ba2-a740-40993f505204"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{stok}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="507" y="0" width="131" height="20" uuid="339ba105-9bfb-488d-8349-f9568e393aaf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{harga_satuan}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="144" splitType="Stretch">
+			<textField>
+				<reportElement x="657" y="0" width="133" height="23" uuid="abae62bc-4c64-4aac-bb74-e0f38322addf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["Jember, " + new java.text.SimpleDateFormat("d MMMM yyyy", new java.util.Locale("id")).format(new java.util.Date())]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="657" y="23" width="133" height="24" uuid="0e67d1d6-def0-41f5-b00d-5137896338f1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Mengetahui,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="657" y="84" width="133" height="20" uuid="74f51c52-9e73-439d-841a-2812562f635a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[(Eric Giovanii)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="657" y="103" width="133" height="20" uuid="d851c0ce-1451-4696-9016-d2151e13ecb4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Manager Radja Car Wash]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

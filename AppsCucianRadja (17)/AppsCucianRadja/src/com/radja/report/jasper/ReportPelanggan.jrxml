@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9dc92f05-0bf9-478d-bc36-1a98cc8fd0bc">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM pelanggan;]]>
+	</queryString>
+	<field name="id_pelanggan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_pelanggan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telepon" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="alamat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="member_status" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jumlah_transaksi" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="263" y="11" width="255" height="29" uuid="37ea643f-2abf-49f6-9ae2-6987d332976a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cucian Radja Car Wash]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="263" y="40" width="255" height="29" uuid="5f07969f-f77c-4c65-8b0f-4fab89aac232"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Execellent Auto Washing & Detailing]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="263" y="3" width="255" height="29" uuid="f2a03511-203d-4794-8200-01a192600917"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Laporan Data Pelanggan]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="2" width="802" height="1" uuid="59b6d702-70d5-4ad7-8c12-1f38c6855fa5"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="91" y="0" width="100" height="20" backcolor="#313649" uuid="ebbdeede-2e69-4707-baf4-41a1978b28e1"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="191" y="0" width="100" height="20" backcolor="#313649" uuid="11154331-108f-4051-a273-304860ca717a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="291" y="0" width="100" height="20" backcolor="#313649" uuid="94cc89d6-8917-4de0-907c-7fb43d9e669d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="391" y="0" width="100" height="20" backcolor="#313649" uuid="35c1f244-2787-446c-8aa2-a06d400a558f"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="491" y="0" width="100" height="20" backcolor="#313649" uuid="7a1ab687-4873-4152-94b9-5e895feaa7b4"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="591" y="0" width="100" height="20" backcolor="#313649" uuid="98f7bd0a-c45a-4f6e-af2c-4838fe469b9a"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="91" y="0" width="100" height="20" forecolor="#FFFFFF" uuid="c0c2550c-6b05-4802-b23f-06200fe83c96"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[ID Pelanggan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="191" y="0" width="100" height="20" forecolor="#FFFFFF" uuid="025d76d1-3dae-4502-945c-0e65c408eb93"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Nama Pelanggan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="291" y="0" width="100" height="20" forecolor="#FFFFFF" uuid="02cc43bb-10e6-405a-b223-f4651261041e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[No Telepon]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="391" y="0" width="100" height="20" forecolor="#FFFFFF" uuid="2c003beb-d617-4463-bdd9-e4dbf4f3a8f6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Alamat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="491" y="0" width="100" height="20" forecolor="#FFFFFF" uuid="45ea9a5a-98e9-4407-9a9d-057028d8bd16"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Status]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="591" y="0" width="100" height="20" forecolor="#FFFFFF" uuid="ed5a71c7-01f2-4002-b347-6785c13536cc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Jumlah Transaksi]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<rectangle>
+				<reportElement x="91" y="0" width="100" height="20" uuid="45adb39f-b2f1-48f5-9f1e-052c47344b0f"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="191" y="0" width="100" height="20" uuid="24c522ad-fd42-4b14-9dec-1ae25a0e2324"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="291" y="0" width="100" height="20" uuid="23590fe0-8eb1-4df5-829b-fbbfa0df3aaa"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="391" y="0" width="100" height="20" uuid="61122f56-6e51-47ed-be64-60d5b7e7a8a2"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="491" y="0" width="100" height="20" uuid="f1b875a8-6ad9-4e24-ab45-be3111758c72"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="591" y="0" width="100" height="20" uuid="4e0a44d5-d3d9-4422-b7e7-76006aaf21ec"/>
+			</rectangle>
+			<textField>
+				<reportElement x="91" y="0" width="100" height="20" uuid="22f86fca-c477-4660-998f-0b830c1be8af"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{id_pelanggan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="191" y="0" width="100" height="20" uuid="e57d6841-e939-4aba-8363-c305669af595"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nama_pelanggan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="291" y="0" width="100" height="20" uuid="11d07b9a-7b8b-4f58-a425-7e064103222a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{telepon}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="391" y="0" width="100" height="20" uuid="2299c69d-d062-4dcd-9556-649e5926c0f3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{alamat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="491" y="0" width="100" height="20" uuid="08136e6f-747b-40a3-81fe-cb3e889c503a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{member_status}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="591" y="0" width="100" height="20" uuid="1be0263c-f24b-4b97-a9cd-3dacc64770be"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{jumlah_transaksi}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="22" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="149" splitType="Stretch">
+			<textField>
+				<reportElement x="634" y="0" width="128" height="20" uuid="24a258e4-c64f-4dd7-ba88-43468f673933"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["Jember, " + new java.text.SimpleDateFormat("d MMMM yyyy", new java.util.Locale("id")).format(new java.util.Date())]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="634" y="20" width="128" height="20" uuid="c827cddd-0698-4bd8-8bdf-830718839b78"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Mengetahui]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="634" y="109" width="128" height="20" uuid="ec4cadad-0552-4e74-b202-14ab1f948729"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[(Eric Giovanii)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="634" y="129" width="128" height="20" uuid="24926b2e-a745-488a-b74a-3bb4abfc8cad"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Manager Radja Car Wash]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

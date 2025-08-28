@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1cf44589-87c2-44b0-a308-6d8d502a88b0">
+	<property name="ireport.zoom" value="0.9090909090909096"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="b49d7955-80ce-4888-8e37-166ec2b9e9e0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM absensi;]]>
+	</queryString>
+	<field name="id_absensi" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_karyawan" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="waktu_masuk" class="java.time.LocalDateTime">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="waktu_pulang" class="java.time.LocalDateTime">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="status" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="keterangan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tanggal" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="durasi" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="73" splitType="Stretch">
+			<staticText>
+				<reportElement x="248" y="0" width="285" height="33" uuid="2a783d7f-5c46-42c0-9c97-9bca20a00e7d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cucian Radja Car Wash]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="248" y="33" width="285" height="32" uuid="5e54893c-e63a-4301-b1da-04680e570d08"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Execellent Auto Washing & Detailing]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="72" width="802" height="1" uuid="f51bc676-519a-4e04-86d3-2cc37e092fb7"/>
+			</line>
+			<image hAlign="Center" vAlign="Middle">
+				<reportElement x="162" y="8" width="67" height="57" uuid="2f05dbe5-9b75-4a6f-8601-a1290c26592a"/>
+				<imageExpression><![CDATA["C:\\Users\\ACER\\Documents\\NetBeansProjects\\AppsCucianRadja\\src\\com\\radja\\icon\\Logo.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="37" splitType="Stretch">
+			<line>
+				<reportElement x="359" y="0" width="100" height="1" uuid="89b4f2c3-fe37-47ce-a084-876e4dfe7aa6"/>
+			</line>
+			<staticText>
+				<reportElement x="248" y="11" width="285" height="24" uuid="5077e582-8af7-4cd3-b0fe-73ba831e44dc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Laporan Data Absensi Karyawan]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="21" splitType="Stretch">
+			<rectangle>
+				<reportElement x="533" y="1" width="115" height="20" backcolor="#313649" uuid="1eb72959-2dfa-4cbe-8fd9-4c3cb95101b2"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="648" y="1" width="100" height="20" backcolor="#313649" uuid="34883e24-ac8f-47d1-98b7-67bf6498c3dc"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="347" y="1" width="112" height="20" backcolor="#313649" uuid="62d85afc-2906-41c4-88b4-8b2b55ad5846"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="229" y="1" width="118" height="20" backcolor="#313649" uuid="4c5b3b18-0e0b-40e4-853c-26ff366ffee0"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="129" y="1" width="100" height="20" backcolor="#313649" uuid="06562897-c914-4354-979d-7f73be194919"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="48" y="1" width="81" height="20" backcolor="#313649" uuid="913ec4c1-b06d-4cdf-9a5b-a10202d0550f">
+					<property name="net.sf.jasperreports.export.pdf.tag.td" value="full"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="48" y="1" width="81" height="20" forecolor="#FFFFFF" backcolor="#FFFFFF" uuid="f7923f36-8969-4bc2-8fce-821520183846"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[NO ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="129" y="1" width="100" height="20" forecolor="#FFFFFF" uuid="ed2bd483-0e03-4fe1-9f28-e4cf056bed63"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[ID KARYAWAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="229" y="1" width="118" height="20" forecolor="#FFFFFF" uuid="ff8de3de-b8d8-4418-b386-b6878ffe15c9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[MASUK]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="459" y="1" width="74" height="20" backcolor="#313649" uuid="6efbe49f-9523-49fc-a065-483e701148ac"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="459" y="1" width="74" height="20" forecolor="#FFFFFF" uuid="64d9f246-8ae8-4c40-8b79-effaf4cbb82f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[STATUS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="533" y="1" width="115" height="20" forecolor="#FFFFFF" uuid="6454cf7d-dd5e-4010-841a-fefc879f62a5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[KETERANGAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="648" y="1" width="100" height="20" forecolor="#FFFFFF" uuid="1fae2792-6867-4eec-9c09-2cfbccb0f427"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[TANGGAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="347" y="1" width="111" height="20" forecolor="#FFFFFF" uuid="94977372-b7d7-4a88-a328-02035e767502"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[PULANG]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="48" y="0" width="81" height="20" uuid="c4804e98-47ee-421b-893e-834090070ce9"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="129" y="0" width="100" height="20" uuid="02434762-657c-4ba1-8d77-d4831ec0d94d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="347" y="0" width="112" height="20" uuid="8d34bd4d-3abf-4bdd-af71-bdb725f39d41"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="459" y="0" width="74" height="20" uuid="a41778b8-947d-45ba-9f51-30b67184b6d4"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="533" y="0" width="115" height="20" uuid="35949f4b-a4da-4e50-a8ad-322e69e33fe0"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="648" y="0" width="100" height="20" uuid="07923f48-a88c-457e-8847-4d07d573a5ab"/>
+			</rectangle>
+			<textField>
+				<reportElement x="48" y="0" width="81" height="20" uuid="2fd99835-806c-4e8e-8f3e-0eedc0d6d2fe"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{id_absensi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="459" y="0" width="74" height="20" uuid="629d117c-258d-4eca-9e88-3896845b4d86"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="533" y="0" width="115" height="20" uuid="df06fce7-5f9e-4abb-9b75-03df79e7bdb9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{keterangan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="648" y="0" width="100" height="20" uuid="8620d20e-713a-49c5-98f9-2efdd7b9efec"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tanggal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="129" y="0" width="100" height="20" uuid="e4e6cf71-1271-40d7-a5b0-36cc162c0996"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{id_karyawan}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="229" y="0" width="118" height="20" uuid="34b6a9f9-f7c1-44f9-ab8b-574babbf538d"/>
+			</rectangle>
+			<textField>
+				<reportElement x="227" y="0" width="120" height="20" uuid="52517b9b-1f20-4f93-aa34-0ba1325de5ff"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[""+$F{waktu_masuk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="347" y="0" width="111" height="20" uuid="365d9eb5-c7bb-4948-a518-5b9f988403aa"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[""+$F{waktu_pulang}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="111" splitType="Stretch">
+			<textField>
+				<reportElement x="633" y="0" width="141" height="20" uuid="e5ab5819-8b00-44e0-bdd2-b8c870cc163e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["Jember, " + new java.text.SimpleDateFormat("d MMMM yyyy", new java.util.Locale("id")).format(new java.util.Date())]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="633" y="20" width="141" height="17" uuid="73c1bb68-4d89-483d-be87-0ba5678dd1ca"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Mengetahui,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="633" y="94" width="141" height="17" uuid="1acfe494-2068-44c4-a5dc-351a3ea5a69d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Manager Radja Car Wash]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="633" y="77" width="141" height="17" uuid="1df21c18-0876-4cff-9d28-b270b7ff2bb6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[(Eric Giovanii)]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/form/FormOpnameStok.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/dao/PesananDAO.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/service/ServiceLabaRugi.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/tablemodel/TabModPesanan.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/model/Pemasukan.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/report/ReportPelanggan.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/service/ServiceReport.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/dao/PelangganDAO.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/form/FormPesananMenungguAntrian.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/auth/FormLogin.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/form/input/FormInputPesananReview.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/model/Pengeluaran.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/dao/ReportDAO.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/service/ServiceKaryawan.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/tablemodel/TabModBarang.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/form/input/FormInputPesananPelanggan.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/dao/UserDAO.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/service/ServiceBarang.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/tablemodel/TabModPemasukan.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/report/ReportBarang.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/form/input/FormInputPesananLayanan.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/form/FormBarang.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/model/Barang.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/dao/BarangDAO.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/dao/BiayaOperasionalDAO.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/tablemodel/TabModPengeluaran.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/form/FormPesananSelesai.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/report/ReportPemasukan.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/form/FormUser.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/report/ReportLabaRugi.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/form/input/FormUserProfile.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/service/impl/ServiceUserImpl.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/report/ReportKaryawan.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/form/FormPesananDalamAntrian.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/service/ServiceUser.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/form/FormPelanggan.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/form/input/FormInputBarang.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/report/ReportPengeluaran.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/form/FormPesananSemua.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/form/input/FormInputUser.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/form/FormPesananDalamProses.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/form/input/FormInputPelanggan.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/form/input/FormInputPesanan.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/form/FormTransaksi.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/AppsCucianRadja%20(17)/AppsCucianRadja/src/com/radja/dao/LabaRugiDAO.java</file>
+        </group>
+    </open-files>
+</project-private>

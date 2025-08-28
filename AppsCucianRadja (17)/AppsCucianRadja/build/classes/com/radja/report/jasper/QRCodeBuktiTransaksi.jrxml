@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="170" pageHeight="255" columnWidth="142" leftMargin="14" rightMargin="14" topMargin="14" bottomMargin="14" uuid="e51202a0-ec0a-4a2a-9bc2-bb91b718ef12">
+	<property name="ireport.zoom" value="3.221020000000009"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="id_pesanan" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="QRCodeImage" class="java.awt.image.BufferedImage">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT psn.id_pesanan, psn.tanggal_pesanan, plg.nama_pelanggan, plg.telepon, psn.merk_mobil, psn.nomor_plat, psn.total_harga, psn.status, lyn.nama_layanan,lyn.harga, psn.is_delete
+FROM pesanan psn
+INNER JOIN pelanggan plg ON plg.id_pelanggan = psn.id_pelanggan
+INNER JOIN layanan lyn ON lyn.id_layanan = psn.id_layanan
+WHERE psn.id_pesanan = $P{id_pesanan}]]>
+	</queryString>
+	<field name="id_pesanan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tanggal_pesanan" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_pelanggan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telepon" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="merk_mobil" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nomor_plat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="total_harga" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="status" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_layanan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="harga" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="is_delete" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="227" splitType="Stretch">
+			<image>
+				<reportElement x="51" y="187" width="40" height="40" uuid="d088d939-8e71-438a-8b97-03a2057cf4cf"/>
+				<imageExpression><![CDATA[$P{QRCodeImage}]]></imageExpression>
+			</image>
+			<elementGroup>
+				<image>
+					<reportElement x="59" y="0" width="25" height="25" uuid="2a8a7289-08c3-4c33-914b-119996818e42"/>
+					<imageExpression><![CDATA["../../icon/check_ijo.png"]]></imageExpression>
+				</image>
+			</elementGroup>
+			<staticText>
+				<reportElement x="0" y="58" width="64" height="13" forecolor="#999999" uuid="26f71428-30fb-44c2-8361-cea74cc6cace"/>
+				<box leftPadding="0"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="64" y="58" width="78" height="13" uuid="290d562f-ad9d-472f-825e-edae8b1c6eb9"/>
+				<box rightPadding="0"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Rp. " + new DecimalFormat("#,##0").format($F{total_harga})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="64" y="81" width="78" height="13" uuid="0f1aa271-f4cb-4fc1-bbb1-f0f06df2e353"/>
+				<box rightPadding="0"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama_pelanggan}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="81" width="64" height="13" forecolor="#999999" uuid="493d1da7-650a-4f9b-b3a8-74659cf96fc8"/>
+				<box leftPadding="0"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Nama]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="64" y="94" width="78" height="13" uuid="6f7b730a-0276-43e0-a987-13328f1d483c"/>
+				<box rightPadding="0"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{telepon}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="94" width="64" height="13" forecolor="#999999" uuid="1e1c3cd6-a3bd-46cb-a5f0-63824a5015fe"/>
+				<box leftPadding="0"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[No. Hp]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="64" y="107" width="78" height="13" uuid="646ce673-2c0f-4194-bccb-bdd60ff33804"/>
+				<box rightPadding="0"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{merk_mobil}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="107" width="64" height="13" forecolor="#999999" uuid="31603ff8-61ac-4f83-a8c3-627e513df1de"/>
+				<box leftPadding="0"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Merk Kendaraan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="120" width="64" height="13" forecolor="#999999" uuid="8e5992ad-5f6b-42c8-9651-5187aeb2f028"/>
+				<box leftPadding="0"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Nomor Plat]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="64" y="120" width="78" height="13" uuid="5eb062db-731e-42b0-83da-197ed33c1ee9"/>
+				<box rightPadding="0"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomor_plat}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="133" width="64" height="13" forecolor="#999999" uuid="12319f7f-cde0-4592-a664-8d8f289236bd"/>
+				<box leftPadding="0"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Layanan]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="64" y="133" width="78" height="13" uuid="d7d23608-46d4-4929-87b0-a47ea12b4d58"/>
+				<box rightPadding="0"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama_layanan}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="146" width="64" height="13" forecolor="#999999" uuid="8b9bae48-1ba0-45ef-9d52-d22221d4daf0"/>
+				<box leftPadding="0"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Harga Layanan]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="64" y="146" width="78" height="13" uuid="bded0efb-ce1f-4877-8434-c7c1b8799fe4"/>
+				<box rightPadding="0"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Rp. " + new DecimalFormat("#,##0").format($F{harga})]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="165" width="64" height="13" forecolor="#999999" uuid="77023aab-149f-442a-8c43-2de4d9af7057"/>
+				<box leftPadding="0"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Tanggal Order]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="64" y="165" width="78" height="13" uuid="dda07cc3-b7cc-45ef-be3d-80256e2142a2"/>
+				<box rightPadding="0"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.text.SimpleDateFormat("yyyy-MM-dd").format($F{tanggal_pesanan})]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="21" y="25" width="100" height="14" uuid="621ad471-24fc-4b2f-8961-7de5e7ca08a9"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pesanan Selesai!]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="39" width="100" height="12" forecolor="#999999" uuid="4bea1bbf-cfef-4f8b-b31d-833f6f1ecbf9"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Pesanan telah diselesaikan.]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="75" width="142" height="1" forecolor="#999999" uuid="80278d31-279b-4de7-be31-53bf5ce3ed45"/>
+				<graphicElement>
+					<pen lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="0" y="182" width="142" height="1" forecolor="#999999" uuid="bb1b898f-3115-4adf-a490-025625e98959"/>
+				<graphicElement>
+					<pen lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+		</band>
+	</detail>
+</jasperReport>
